@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us5-4Q-HvK">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDY-od-47o">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="jpf-tc-Pww"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="自动闪"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAP-1O-TLB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-65-8f9">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="z5E-7b-9dG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="不闪"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ulO-82-y6J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-CB-ZVj">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="oHR-TU-YMF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="切换镜头"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zb-9U-abT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wi-Tb-heC">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="xWa-Wd-rTM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="打开或关闭手电筒"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZX-pm-2Uq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-5H-go3">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="J0x-hy-Z0R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="拍照"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEB-R3-HS0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fu-fg-9fr">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="JE3-0d-I2p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="闪光灯"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwN-iH-c80"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99607849120000003" green="0.83137261870000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dxy-CB-ZVj" secondAttribute="trailing" id="8eI-ay-OUc"/>
+                                    <constraint firstItem="BDY-od-47o" firstAttribute="leading" secondItem="us5-4Q-HvK" secondAttribute="leading" id="Kj7-DQ-1Sj"/>
+                                    <constraint firstAttribute="bottom" secondItem="3fu-fg-9fr" secondAttribute="bottom" id="NvS-di-w1x"/>
+                                    <constraint firstItem="3fu-fg-9fr" firstAttribute="leading" secondItem="BDY-od-47o" secondAttribute="trailing" id="Ot7-89-lB7"/>
+                                    <constraint firstItem="3fu-fg-9fr" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="SgV-Nt-vLh"/>
+                                    <constraint firstItem="kxQ-5H-go3" firstAttribute="leading" secondItem="6Wi-Tb-heC" secondAttribute="trailing" id="WCc-UO-7Tw"/>
+                                    <constraint firstItem="dWq-65-8f9" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="dV9-vI-moG"/>
+                                    <constraint firstItem="6Wi-Tb-heC" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="el1-uv-IUn"/>
+                                    <constraint firstAttribute="bottom" secondItem="dxy-CB-ZVj" secondAttribute="bottom" id="hL4-hp-guW"/>
+                                    <constraint firstAttribute="bottom" secondItem="dWq-65-8f9" secondAttribute="bottom" id="jFr-De-WZh"/>
+                                    <constraint firstAttribute="bottom" secondItem="kxQ-5H-go3" secondAttribute="bottom" id="jOi-8h-Kop"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Wi-Tb-heC" secondAttribute="bottom" id="mIu-aj-hxI"/>
+                                    <constraint firstItem="kxQ-5H-go3" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="sT4-0j-GsQ"/>
+                                    <constraint firstItem="dxy-CB-ZVj" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="u3J-0c-kVi"/>
+                                    <constraint firstItem="dWq-65-8f9" firstAttribute="leading" secondItem="3fu-fg-9fr" secondAttribute="trailing" id="uaZ-iZ-jD6"/>
+                                    <constraint firstAttribute="bottom" secondItem="BDY-od-47o" secondAttribute="bottom" id="umq-jQ-UbB"/>
+                                    <constraint firstItem="6Wi-Tb-heC" firstAttribute="leading" secondItem="dWq-65-8f9" secondAttribute="trailing" id="vYt-VK-2Yn"/>
+                                    <constraint firstAttribute="height" constant="44" id="xw1-LP-Nsw"/>
+                                    <constraint firstItem="BDY-od-47o" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="top" id="z6Z-L7-B1z"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-MP-ler">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="h7l-s9-87H"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="focalDistanceAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="em7-Hd-yMT"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="us5-4Q-HvK" firstAttribute="top" secondItem="OY6-MP-ler" secondAttribute="bottom" constant="8" id="70D-YQ-XCP"/>
+                            <constraint firstAttribute="trailing" secondItem="OY6-MP-ler" secondAttribute="trailing" id="PXN-6d-TVM"/>
+                            <constraint firstAttribute="trailing" secondItem="us5-4Q-HvK" secondAttribute="trailing" id="eP7-B2-Ak9"/>
+                            <constraint firstItem="OY6-MP-ler" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jlU-Ta-Hhb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="us5-4Q-HvK" secondAttribute="bottom" id="rSy-ff-4Wz"/>
+                            <constraint firstItem="us5-4Q-HvK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y97-n0-cxf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
